@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import React, { Component } from 'react';
 import s from './ContactForm.module.scss';
 
@@ -69,3 +71,11 @@ class ContactForm extends Component {
 }
 
 export default ContactForm;
+
+ContactForm.propTypes = {
+  getContact: PropTypes.func,
+  onSubmitHandler: PropTypes.func,
+  onChangeInputHandler: PropTypes.func,
+  name: PropTypes.string,
+  number: PropTypes.string,
+};

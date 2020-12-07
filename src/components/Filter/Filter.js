@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import s from './Filter.module.scss';
 
@@ -11,3 +12,8 @@ const Filter = ({ filter, filterHandler }) => {
 };
 
 export default Filter;
+
+Filter.protoTypes = {
+  filter: PropTypes.string,
+  filterHandler: PropTypes.func,
+};

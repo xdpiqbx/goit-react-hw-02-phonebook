@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import s from './Contact.module.scss';
@@ -19,3 +20,8 @@ const Contact = ({ contact, deleteContact }) => {
 };
 
 export default Contact;
+
+Contact.propTypes = {
+  contact: PropTypes.object,
+  deleteContact: PropTypes.func,
+};
